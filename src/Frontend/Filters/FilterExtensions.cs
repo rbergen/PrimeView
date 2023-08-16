@@ -69,7 +69,7 @@ namespace PrimeView.Frontend.Filters
                 filter.FilterLanguages.Count switch
                 {
                     0 => "all languages",
-                    1 => $"{languageInfoProvider.GetLanguageInfo(filter.FilterLanguages[0]).Name}",
+                    1 => languageInfoProvider.GetLanguageInfo(filter.FilterLanguages[0]).Name,
                     _ => $"{filter.FilterLanguages.Count} languages"
                 },
 
