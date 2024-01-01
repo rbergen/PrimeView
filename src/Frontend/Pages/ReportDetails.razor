@@ -120,7 +120,7 @@
 										</label>
 									</div>
 									<div class="form-check">
-										<input class="form-check-input" type="checkbox" id="fp-mt" @bind="FilterParallelMultithreaded">
+										<input class="form-check-input" type="checkbox" id="fp_mt" @bind="FilterParallelMultithreaded">
 										<label class="form-check-label" for="fp_mt">
 											Multithreaded
 										</label>
@@ -233,7 +233,7 @@
 							</li>
 						}
 						<form @onsubmit="AddFilterPreset" class="list-group-item d-flex justify-content-between align-items-center">
-							<input type="text" class="form-control" placeholder="New preset name" @bind="filterPresetName" @bind:event="oninput">
+							<input type="text" id="preset_name" class="form-control" placeholder="New preset name" @bind="filterPresetName" @bind:event="oninput">
 							<button type="submit" class="btn btn-success" disabled="@(!IsFilterPresetNameValid(filterPresetName))">
 								<i class="fas fa-plus"></i>
 							</button>
